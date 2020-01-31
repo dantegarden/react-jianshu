@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { actionCreators } from './store'
 import { actionCreators as loginActionCreators } from '../../pages/login/store'
@@ -11,6 +11,7 @@ import {
     NavItem,
     NavSearch,
     Addition,
+    Avatar,
     Button,
     SearchWrapper,
     SearchInfo,
@@ -20,9 +21,12 @@ import {
     SearchInfoItem
 } from './style'
 
-class Header extends Component {
+class Header extends PureComponent {
     render(){
-        const { hasLogin, focused, searchItems, handleInputFocus, handleInputBlur, logout } = this.props;
+        const {
+            hasLogin, focused, searchItems, username, avatar,
+            handleInputFocus, handleInputBlur, logout
+        } = this.props;
         return(
             <HeaderWrapper>
                 <Logo href="/" />
@@ -56,11 +60,20 @@ class Header extends Component {
                     </SearchWrapper>
                 </Nav>
                 <Addition>
-                    <Button className='writting'>
-                        <i className='iconfont'>&#xe6e5;</i>
-                        写文章
-                    </Button>
-                    <Button className='register'>注册</Button>
+                    <Link to="/write">
+                        <Button className='writting'>
+                            <i className='iconfont'>&#xe6e5;</i>
+                            写文章
+                        </Button>
+                    </Link>
+                    {
+                        hasLogin? (
+                            <Avatar>
+                                <img alt="" title={username} src={avatar}/>
+                            </Avatar>
+                        ) : <Button className='register'>注册</Button>
+                    }
+
                 </Addition>
             </HeaderWrapper>
         )
@@ -105,7 +118,9 @@ const mapStateToProps = (state)=>{
         searchItems: state.getIn(['header', 'searchItems']),
         page: state.getIn(['header', 'page']),
         totalPage: state.getIn(['header', 'totalPage']),
-        hasLogin: state.getIn(['login', 'hasLogin'])
+        hasLogin: state.getIn(['login', 'hasLogin']),
+        username: state.getIn(['login', 'username']),
+        avatar: state.getIn(['login', 'avatar'])
     }
 }
 const MapDispatchToProps = (dispatch)=>{

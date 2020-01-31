@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import logoPic from '../../statics/img/logo.png'
+import logoPic from '../../statics/logo.png'
 
 export const HeaderWrapper = styled.div`
     z-index: 999;
@@ -102,6 +102,21 @@ export const Addition = styled.div`
     right: 0;
     top: 0;
     height: 58px;
+`
+
+export const Avatar = styled.a`
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 8px 24px 8px 16px;
+    float: left;
+    img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
 `
 
 export const Button = styled.div`

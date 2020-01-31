@@ -7,10 +7,10 @@ const defaultState = fromJS({
     articlePage: 0,
     articleTotalPage: 1,
     recommendItems: [
-        {id: 1, imgUrl: require("../../../statics/img/recommend1.png")},
-        {id: 2, imgUrl: require("../../../statics/img/recommend2.png")},
-        {id: 3, imgUrl: require("../../../statics/img/recommend3.png")},
-        {id: 4, imgUrl: require("../../../statics/img/recommend4.png")}
+        {id: 1, imgUrl: "/img/recommend1.png"},
+        {id: 2, imgUrl: "/img/recommend2.png"},
+        {id: 3, imgUrl: "/img/recommend3.png"},
+        {id: 4, imgUrl: "/img/recommend4.png"}
     ],
     writerItems: [],
     writerPage: 0,

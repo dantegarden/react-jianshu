@@ -22,7 +22,7 @@ class Home extends Component {
         return(
             <HomeWrapper>
                 <HomeLeft>
-                    <img className="banner-img" alt="" src={require('../../statics/img/timg.jpg')} />
+                    <img className="banner-img" alt="" src={process.env.PUBLIC_URL + '/img/timg.jpg'} />
                     <Topic />
                     <List />
                 </HomeLeft>

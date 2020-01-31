@@ -14,11 +14,11 @@ class Recommend extends Component {
             <RecommendWrapper>
                 {
                     recommendItems.toJS().map(item => (
-                        <RecommendItem key={item.id} imgUrl={item.imgUrl}></RecommendItem>
+                        <RecommendItem key={item.id} imgUrl={process.env.PUBLIC_URL + item.imgUrl}></RecommendItem>
                     ))
                 }
                 <InfoItem>
-                    <img className="info-qrcode" alt="" src={require('../../../statics/img/qrcode.png')} />
+                    <img className="info-qrcode" alt="" src={process.env.PUBLIC_URL + '/img/qrcode.png'} />
                     <div className="info">
                         <div className="title">
                             下载简书手机App

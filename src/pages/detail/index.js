@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import { actionCreators } from './store'
 import {
     DetailWrapper,
@@ -7,7 +8,7 @@ import {
     DetailContent
 } from './style'
 
-class Detail extends Component {
+class Detail extends PureComponent {
     render(){
         console.log(this.props) //match里保存着路由参数
         const {title, content} = this.props
@@ -34,9 +35,10 @@ const mapStateToProps = (state)=>{
 const MapDispatchToProps = (dispatch)=>{
     return {
         getDetail(id){
-            dispatch(actionCreators.getDetail(id));
+            dispatch(actionCreators.getDetail(id));  //非异步加载，可以获取路由参数
+            //异步加载，无法获取路由参数，需要withRouter
         }
     }
 }
 
-export default connect(mapStateToProps, MapDispatchToProps)(Detail);
+export default connect(mapStateToProps, MapDispatchToProps)(withRouter(Detail));
