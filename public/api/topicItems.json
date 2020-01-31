@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "data": [
+    {"id": 1, "title": "故事", "imgUrl": "https://upload.jianshu.io/collections/images/95/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 2, "title": "程序员", "imgUrl": "https://upload.jianshu.io/collections/images/16/computer_guy.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 3, "title": "哲思", "imgUrl": "https://upload.jianshu.io/collections/images/39/332293730045332541.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 4, "title": "读书", "imgUrl": "https://upload.jianshu.io/collections/images/516721/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170815163811.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 5, "title": "摄影", "imgUrl": "https://upload.jianshu.io/collections/images/83/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 6, "title": "旅行·在路上", "imgUrl": "https://upload.jianshu.io/collections/images/13/%E5%95%8A.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 7, "title": "短篇小说", "imgUrl": "https://upload.jianshu.io/collections/images/11/20100120161805563.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"},
+    {"id": 8, "title": "人物", "imgUrl": "https://upload.jianshu.io/collections/images/56/Mypsd_176980_201208311721380003B.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144/format/webp"}
+  ]
+}

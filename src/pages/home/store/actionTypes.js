@@ -1,0 +1,5 @@
+export const UPDATE_TOPIC_ITEMS = 'home/update_topic_items'
+export const UPDATE_ARTICLE_ITEMS = 'home/update_article_items'
+export const UPDATE_WRITER_ITEMS = 'home/update_writer_items'
+export const CHANGE_WRITER_ITEMS_PAGE = 'home/change_writer_items_page'
+export const TOGGLE_SHOW_BACK_TO_TOP = 'home/toggle_show_back_to_top'
