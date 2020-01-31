@@ -22,7 +22,7 @@ class Home extends Component {
         return(
             <HomeWrapper>
                 <HomeLeft>
-                    <img className="banner-img" alt="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580323030600&di=9ee464c86fd6171f60ad7510f5c77503&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F04%2F29%2F97%2F2258401eafb4793.jpg" />
+                    <img className="banner-img" alt="" src={require('../../statics/img/timg.jpg')} />
                     <Topic />
                     <List />
                 </HomeLeft>

@@ -18,7 +18,7 @@ class Recommend extends Component {
                     ))
                 }
                 <InfoItem>
-                    <img className="info-qrcode" alt="" src="https://cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png" />
+                    <img className="info-qrcode" alt="" src={require('../../../statics/img/qrcode.png')} />
                     <div className="info">
                         <div className="title">
                             下载简书手机App

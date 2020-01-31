@@ -7,10 +7,10 @@ const defaultState = fromJS({
     articlePage: 0,
     articleTotalPage: 1,
     recommendItems: [
-        {id: 1, imgUrl: "https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"},
-        {id: 2, imgUrl: "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"},
-        {id: 3, imgUrl: "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"},
-        {id: 4, imgUrl: "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"}
+        {id: 1, imgUrl: require("../../../statics/img/recommend1.png")},
+        {id: 2, imgUrl: require("../../../statics/img/recommend2.png")},
+        {id: 3, imgUrl: require("../../../statics/img/recommend3.png")},
+        {id: 4, imgUrl: require("../../../statics/img/recommend4.png")}
     ],
     writerItems: [],
     writerPage: 0,

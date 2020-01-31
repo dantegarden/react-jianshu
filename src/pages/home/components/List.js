@@ -19,7 +19,7 @@ class List extends Component {
                             <ListItem>
                                 <img className="list-pic"
                                      alt="jianshu"
-                                     src={item.imgUrl} />
+                                     src={require(`../../../statics/img/4459384-cd28e6c30e786deb.png`)} /> {/*先写死，没法动态加载本地图片*/}
                                 <ListInfo>
                                     <h3 className="title">{item.title}</h3>
                                     <p className="desc">{item.desc}</p>
